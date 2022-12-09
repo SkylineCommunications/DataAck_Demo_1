@@ -23,11 +23,11 @@ jobs:
       referenceType: ${{ github.ref_type }}
       repository: ${{ github.repository }}
       owner: ${{ github.repository_owner }}
-      sonarCloudProjectName: "todo"
-      # The API-key generated in the DCP Admin app (https://admin.dataminer.services/) as authentication for a certain DataMiner System. E.g. g597e77412e34297b827c2570a8fa2bc
-      secrets:
-        api-key: ${{ secrets.DATAMINER_DEPLOY_KEY }}
-        sonarCloudToken: ${{ secrets.SONAR_TOKEN }}
+      sonarCloudProjectName: SkylineCommunications_DataAck_Demo_1
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+    secrets:
+      api-key: ${{ secrets.DATAMINER_DEPLOY_KEY }}
+      sonarCloudToken: ${{ secrets.SONAR_TOKEN }}
     
   # # Optional 0 or More CD Jobs as needed
   # CD:
